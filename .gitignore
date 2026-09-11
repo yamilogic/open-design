@@ -10,7 +10,6 @@ out/
 .vite
 .astro/
 .wrangler/
-.vscode
 
 # Local runtime data — auto-created by the daemon on first start.
 # Holds app.sqlite (project metadata), projects/<id>/ (per-project artifacts,
@@ -76,7 +75,6 @@ docs/superpowers/
 .direnv/
 .envrc
 # Local secrets (PostHog keys, BYOK creds for local testing, etc.)
-.env.local
 .env.*.local
 # Local design assistant context
 .impeccable.md
@@ -103,3 +101,7 @@ deploy/agent-bins/
 # Python bytecode from workflow helper self-checks / local compile.
 __pycache__/
 *.py[cod]
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat

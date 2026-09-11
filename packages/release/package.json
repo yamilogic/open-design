@@ -18,7 +18,7 @@
     }
   },
   "scripts": {
-    "build": "tsx ./esbuild.config.ts && tsc -p tsconfig.json --emitDeclarationOnly",
+    "build": "node init && tsx ./esbuild.config.ts && tsc -p tsconfig.json --emitDeclarationOnly",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.tests.json --noEmit"
   },
