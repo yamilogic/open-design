@@ -6,7 +6,9 @@
   "description": "Shell-neutral exact distribution, generation, and launcher runtime.",
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -14,7 +16,7 @@
     }
   },
   "scripts": {
-    "build": "tsx ./esbuild.config.ts && tsc -p tsconfig.json --emitDeclarationOnly",
+    "build": "node init && tsx ./esbuild.config.ts && tsc -p tsconfig.json --emitDeclarationOnly",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.tests.json --noEmit"
   },
@@ -29,5 +31,7 @@
     "typescript": "6.0.3",
     "vitest": "4.1.6"
   },
-  "engines": {"node": "~24"}
+  "engines": {
+    "node": "~24"
+  }
 }
